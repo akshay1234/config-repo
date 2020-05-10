@@ -27,7 +27,9 @@ env:
     dbserver: XAPP
     clockware-switch: false
     crm:
-      crmUrl: http://localhost:9099/v1.0/inbound/customer/update/test
+      url: http://localhost:9099/v1.0/inbound/customer/update/test
+      username: xxpn
+      password: xxpn
       
 eureka:
   client:
@@ -71,8 +73,8 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.Oracle10gDialect
   datasource:
-    url: jdbc:oracle:thin:@localhost:1521:xe
-    username: SYSTEM
+    url: jdbc:oracle:thin:@10.9.2.3:1556:ORA8035
+    username: XXPN
     driver-class-name: oracle.jdbc.driver.OracleDriver 
     initialization-mode: always
 env:
@@ -80,7 +82,9 @@ env:
     dbserver: XAPP
     clockware-switch: false
     crm:
-      crmUrl: http://localhost:9099/v1.0/inbound/customer/update/test
+      url: http://localhost:9099/v1.0/inbound/customer/update/test
+      username: xxpn
+      password: xxpn
       
 eureka:
   client:
@@ -132,7 +136,9 @@ env:
     dbserver: XAPP
     clockware-switch: false
     crm:
-      crmUrl: http://localhost:9099/v1.0/inbound/customer/update/test
+      url: http://localhost:9099/v1.0/inbound/customer/update/test
+      username: xxpn
+      password: xxpn
       
 eureka:
   client:
@@ -184,7 +190,9 @@ env:
     dbserver: XAPP
     clockware-switch: false
     crm:
-      crmUrl: http://localhost:9099/v1.0/inbound/customer/update/test
+      url: http://localhost:9099/v1.0/inbound/customer/update/test
+      username: xxpn
+      password: xxpn
       
 eureka:
   client:
