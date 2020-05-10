@@ -1,0 +1,207 @@
+spring:
+  profiles: local
+  output:
+    ansi:
+      enabled: ALWAYS
+  cloud:
+    config:
+      enabled: false
+      
+  application:
+    name: kafd-services
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    generate-ddl: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.Oracle10gDialect
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521:xe
+    username: SYSTEM
+    driver-class-name: oracle.jdbc.driver.OracleDriver 
+    initialization-mode: always
+env:
+  app:
+    dbserver: XAPP
+    clockware-switch: false
+    crm:
+      crmUrl: http://localhost:9099/v1.0/inbound/customer/update/test
+      
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+server:
+  port: 9099
+info:
+  app:
+    name: kafd-services
+    description: Microservices expose RESTful interfaces intract with CRM services.
+    version: 1.0.0
+    
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+        
+---
+
+spring:
+  profiles: dev
+  output:
+    ansi:
+      enabled: ALWAYS
+  cloud:
+    config:
+      enabled: false
+      
+  application:
+    name: kafd-services
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    generate-ddl: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.Oracle10gDialect
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521:xe
+    username: SYSTEM
+    driver-class-name: oracle.jdbc.driver.OracleDriver 
+    initialization-mode: always
+env:
+  app:
+    dbserver: XAPP
+    clockware-switch: false
+    crm:
+      crmUrl: http://localhost:9099/v1.0/inbound/customer/update/test
+      
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+server:
+  port: 9099
+info:
+  app:
+    name: kafd-services
+    description: Microservices expose RESTful interfaces intract with CRM services.
+    version: 1.0.0
+    
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+---
+
+spring:
+  profiles: uat
+  output:
+    ansi:
+      enabled: ALWAYS
+  cloud:
+    config:
+      enabled: false
+      
+  application:
+    name: kafd-services
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    generate-ddl: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.Oracle10gDialect
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521:xe
+    username: SYSTEM
+    driver-class-name: oracle.jdbc.driver.OracleDriver 
+    initialization-mode: always
+env:
+  app:
+    dbserver: XAPP
+    clockware-switch: false
+    crm:
+      crmUrl: http://localhost:9099/v1.0/inbound/customer/update/test
+      
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+server:
+  port: 9099
+info:
+  app:
+    name: kafd-services
+    description: Microservices expose RESTful interfaces intract with CRM services.
+    version: 1.0.0
+    
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+---
+
+spring:
+  profiles: prod
+  output:
+    ansi:
+      enabled: ALWAYS
+  cloud:
+    config:
+      enabled: false
+      
+  application:
+    name: kafd-services
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    generate-ddl: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.Oracle10gDialect
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521:xe
+    username: SYSTEM
+    driver-class-name: oracle.jdbc.driver.OracleDriver 
+    initialization-mode: always
+env:
+  app:
+    dbserver: XAPP
+    clockware-switch: false
+    crm:
+      crmUrl: http://localhost:9099/v1.0/inbound/customer/update/test
+      
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+server:
+  port: 9099
+info:
+  app:
+    name: kafd-services
+    description: Microservices expose RESTful interfaces intract with CRM services.
+    version: 1.0.0
+    
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
